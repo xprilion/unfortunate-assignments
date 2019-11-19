@@ -9,6 +9,6 @@ s.connect((host, port))
 
 today = s.recv(1024).decode('utf-8')
 
-print("Current Date Received From Server:" + today)
+print("Current Date Received From Server: " + today)
 
 s.close()
