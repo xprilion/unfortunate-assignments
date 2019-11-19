@@ -1,0 +1,41 @@
+<!-- 
+
+    10. Write a JavaScript program to remove items from a dropdown list and after that to count and display the items of that list, in an alert window.
+
+-->
+<html>
+
+<head>
+    <title>The 10th Question</title>
+</head>
+
+<body>
+    <select id="drp_dwn" onChange="fruitDelete();">
+        <option id="" value="demo">----select a fruit to delete----</option>
+        <option id="Apple" value="Apple">Apple</option>
+        <option id="Mango" value="Mango">Mango</option>
+        <option id="Banana" value="Banana">Banana</option>
+        <option id="Grape" value="Grape">Grape</option>
+        <option id="Lemon" value="Lemon">Lemon</option>
+        <option id="Kiwi" value="Kiwi">Kiwi</option>
+        <option id="Guava" value="Guava">Guava</option>
+        <option id="Pineapple" value="Pineapple">Pineapple</option>
+        <option id="Litchi" value="Litchi">Litch</option>
+    </select>
+    <script>
+    function fruitDelete() {
+        var dfruit = document.getElementById("drp_dwn").value;
+        document.getElementById(dfruit).remove();
+        var list = ""
+        var fruits = document.getElementById("drp_dwn").getElementsByTagName("option");
+        var count = fruits.length - 1;
+        list += "Total Fruits: " + count.toString() + "\n";
+        for (var i = 1; i < fruits.length; i++) {
+            list += i.toString() + ". " + fruits[i].value + "\n";
+        }
+        alert(list);
+    }
+    </script>
+</body>
+
+</html>

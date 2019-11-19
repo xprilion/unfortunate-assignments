@@ -1,0 +1,31 @@
+<!-- 
+
+    11. Write a JavaScript function to validate whether a given value type is pure JSON object or not.
+
+-->
+<html>
+
+<head>
+    <title>The 11th Question</title>
+</head>
+
+<body>
+    INPUT DATA: <br />
+    <textarea id="data" rows="20" cols="100"></textarea>
+    <br />
+    <br />
+    <button onclick="validate();">VALIDATE</button>
+    <script>
+    function validate() {
+        var data = document.getElementById("data").value;
+        try {
+            JSON.parse(data);
+            alert("Valid JSON");
+        } catch (e) {
+            alert("Invalid JSON");
+        }
+    }
+    </script>
+</body>
+
+</html>
