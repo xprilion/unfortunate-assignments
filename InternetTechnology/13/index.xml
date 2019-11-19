@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="yes"?>
+<!-- 
+
+    13. Write a XML program that will create an XML document which contains your mailing address
+
+-->
+<!DOCTYPE mailing_address [ 
+<!ELEMENT mailing_address (name, address)>
+<!ELEMENT name (givenname, lastname)>
+<!ELEMENT given_name (#PCDATA)>
+<!ELEMENT middle (#PCDATA)>
+<!ELEMENT address (street, city,state,zip_code)>
+<!ELEMENT street (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT state (#PCDATA)>
+<!ELEMENT zip_code (#PCDATA)>
+] >
+<mailing_address>
+    <name>
+        <givenname>Anubhav</givenname>
+        <lastname>Singh</lastname>
+    </name>
+    <address>
+        <street>IIT Garia</street>
+        <city>Kolkata</city>
+        <state>West Bengal </state>
+        <zip_code>700152</zip_code>
+    </address>
+</mailing_address>

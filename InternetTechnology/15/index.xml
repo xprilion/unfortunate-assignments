@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="yes"?>
+<!-- 
+
+    15. Create a DTD of a catalog for any kind of product to be sold by online like Book, Electronic gadgets, Jewelry, etc.
+
+-->
+<!DOCTYPE document [ 
+<!ELEMENT document (product)*> 
+<!ELEMENT product (name, expirydate,id, price, quantity)> 
+<!ELEMENT hiredate (#PCDATA)> 
+<!ELEMENT id (#PCDATA)> 
+<!ELEMENT price (#PCDATA)> 
+<!ELEMENT quantity (#PCDATA)> 
+] > 
+<document>
+  <product>
+    <name>Lipstick</name>
+    <expirydate>October 15, 2022</expirydate>
+    <id>111</id>
+    <price>Rs.1100.00</price>
+    <quantity>40</quantity>
+   </product>
+   <product>
+     <name>Hair Mask</name>
+     <expirydate>November 30, 2020</expirydate>
+     <id>222</id>
+     <price>Rs.989.00</price>
+     <quantity>10</quantity>
+  </product>
+   <product>
+    <name>Make up kit</name>
+    <expirydate>May 15, 2022</expirydate>
+    <id>333</id>
+    <price>Rs.2000.00</price>
+    <quantity>20</quantity>
+   </product>
+</document>

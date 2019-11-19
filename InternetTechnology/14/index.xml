@@ -1,0 +1,62 @@
+<?xml version="1.0" standalone="yes"?>
+<!-- 
+
+    14. Create an XML version of your resume.
+        Include elements such as your name and position desired.
+        Nest each of your former employers within an <employer> element.
+        Also, nest your educational experience within an <education> element.
+        Create any other nested elements that you consider appropriate, such as <references> or <spcl_skills> elements.
+
+-->
+<!DOCTYPE resume [ 
+<!ELEMENT resume (name,job_title, address, education, employer, phone,email,web,skills)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT job_title (#PCDATA)>
+<!ELEMENT address  (street, city,state,zip, phone)>
+<!ELEMENT street (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT state (#PCDATA)>
+<!ELEMENT zip (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT education (school,degree,yeargraduated)>
+<!ELEMENT school (#PCDATA)>
+<!ELEMENT degree (#PCDATA)>
+<!ELEMENT yeargraduated (#PCDATA)>
+<!ELEMENT employer (company_name)>
+<!ELEMENT year_start (#PCDATA)>
+<!ELEMENT year_end (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT web (#PCDATA)>
+<!ELEMENT skills (language, webDev)>
+<!ELEMENT language (#PCDATA)>
+<!ELEMENT webDev (#PCDATA)>
+] >
+<resume>
+    <name>Anubhav Singh</name>
+    <job_title>Research and Development Engineer</job_title>
+    <address>
+        <street>IIT Garia </street>
+        <city>Kolkata</city>
+        <state>West Bengal </state>
+        <zip>700152</zip>
+        <phone>+91-1231231231</phone>
+    </address>
+    <education>
+        <school>NSEC</school>
+        <degree>B.Tech</degree>
+        <yeargraduated> 2020</yeargraduated>
+    </education>
+    <employer>
+        <company_name>Anuradha Chit Fund Ltd.</company_name>
+        <year_start>2019</year_start>
+        <year_end>2022</year_end>
+    </employer>
+    <phone>316-555-1234</phone>
+    <email>anubhav@acfl.in</email>
+    <web>http://www.acfl.in.com/21-days-paisa-double</web>
+    <skills>
+        <language>English, Hindi</language>
+        <webDev> HTML, CSS, JS, JQuery, PHP, Django </webDev>
+    </skills>
+</resume>
