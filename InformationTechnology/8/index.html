@@ -1,0 +1,39 @@
+<!-- 
+
+	8. Write a JavaScript function to get the difference of time in months between two dates
+
+-->
+<html>
+
+<head>
+    <title>The 8th Question</title>
+</head>
+
+<body>
+
+	Difference in dates in months between 14 Feb 2019 and 14 Nov 2019 is <button onclick="getDiff();" id="difbtn">Click here to get difference</button><span id="difspan"></span>.
+
+    <script>
+    function diff_months(dt2, dt1) {
+
+        var diff = (dt2.getTime() - dt1.getTime()) / 1000;
+        diff /= (60 * 60 * 24 * 7 * 4);
+        diff += 1;
+        return Math.abs(Math.round(diff));
+
+    }
+
+    function getDiff(){
+	    var dt1 = new Date(2019, 2, 14);
+	    var  dt2 = new Date(2019, 11, 14);
+	    var ans = (diff_months(dt1, dt2));
+
+	    document.getElementById('difbtn').style.display = "none";
+	    document.getElementById('difspan').innerHTML = ans;
+	    document.getElementById('difspan').style.display = "inline-block";
+	}
+
+    </script>
+</body>
+
+</html>

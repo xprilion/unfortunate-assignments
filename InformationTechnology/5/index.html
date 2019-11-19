@@ -1,0 +1,105 @@
+<!-- 
+
+	5. Start your web page with an <html> tag
+	i) Add a heading.
+	ii) Add a suitable title.
+	iii) Start the <body> section.
+	Create a simple HTML form.
+	Use the input tag to create a: text box; text area box; check box; list box; radio button; password field; popup
+	menu; hidden field. Uses submit and reset buttons. Create an admission form using the above information.
+
+ -->
+<html>
+
+<head>
+    <title>The 5th Question</title>
+</head>
+
+<body>
+    <form>
+        User name:
+        <input type="text" name="userid">
+        Password:
+        <input type="password" name="psw">
+        <input type="hidden" id="studentId" name="studentId" value="A001">
+        <fieldset>
+            <legend><b>Personal information:</b></legend>
+            First name:
+            <input type="text" name="firstname">
+            Last name:
+            <input type="text" name="lastname"><br><br>
+            Mother's name:
+            <input type="text" name="mothersname">
+            Father's name:
+            <input type="text" name="fathersname"><br><br>
+            Address:
+            <textarea name="message" rows="2" cols="20">
+     </textarea><br>
+            City:
+            <input type="text" name="city">
+            State:
+            <input type="text" name="state">
+            Country:
+            <input type="text" name="country">
+            Pin Code:
+            <input type="text" name="pincode"><br>
+            Email ID:
+            <input type="text" name="emailID">
+            Mobile:
+            <input type="text" name="mobile"><br>
+            <p><b>Gender</b></p>
+            <input type="radio" name="gender" value="male"> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="other"> Other
+            <p><b>Physically Handicapped?</b>
+                <p>
+                    <input type="checkbox" name="option 1" value="Yes"> yes
+                    <input type="checkbox" name="option2" value="No">no
+        </fieldset>
+        <fieldset>
+            <legend><b>Educational Details :</b></legend>
+            <h4><b>Secondary Level</b></h4>
+            Institution name:
+            <input type="text" name="Institutionname"><br>
+            Affiliated Board:
+            <input type="text" name="board"><br>
+            Percantage or CGPA:
+            <input type="text" name="marks"><br>
+            <h4><b>Higher Secondary Level</b></h4>
+            Institution name:
+            <input type="text" name="Institutionname"><br>
+            Affiliated Board:
+            <input type="text" name="board"><br>
+            Stream:
+            <input type="text" name="stream"><br>
+            Percentage or CGPA:
+            <input type="text" name="marks"><br>
+        </fieldset>
+        <fieldset>
+            <legend><b>Admission Course Details :</b></legend>
+            Course name:
+            <select name="drop1" id="Select1" size="4" multiple="multiple">
+                <option value="1">Bachelor of Technology</option>
+                <option value="2">Bachelor Of Science</option>
+                <option value="3">Bachelor og Arts</option>
+                <option value="4">Bachelor of commerce</option>
+                <option value="0">All</option>
+            </select><br>
+            Stream:
+            <select Stream="Engineering">
+                <option value="none">~~~~</option>
+                <option value="Civil Engineering">Civil Engineering</option>
+                <option value="Mechanical Engineering">Mechanical Engineering</option>
+                <option value="Electrical Engineering">Electrical Engineering</option>
+                <option value="Electronics and communication Engineering">Electronics and communication Engineering</option>
+                <option value="Computer Science Engineering">Computer Science Engineering</option>
+                <option value="Information Technology Engineering">Information Technology Engineering</option>
+                <option value="Applied Electronics and Instrumentation Engineering">Applied Electronics and Instrumentation Engineering</option>
+            </select>
+        </fieldset>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>
